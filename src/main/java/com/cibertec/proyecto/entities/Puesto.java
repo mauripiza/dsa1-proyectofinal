@@ -1,4 +1,4 @@
-package com.cibertec.proyecto.entities;
+    package com.cibertec.proyecto.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -25,7 +25,7 @@ public class Puesto {
     private String descripcion;
 
     @ManyToOne
-    @JoinColumn(name = "socio_id")
+    @JoinColumn(name = "id_socio", referencedColumnName = "id_socio", columnDefinition = "INT")
     private Socio socio;
 
     @ManyToMany(mappedBy = "puestos")

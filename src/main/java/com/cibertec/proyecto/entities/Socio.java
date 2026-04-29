@@ -25,9 +25,10 @@ import lombok.Data;
 @Setter
 public class Socio {
 
-    @Id
-    @GeneratedValue (strategy =GenerationType.IDENTITY)
-    private Long id;
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@Column(name = "id_socio") // Esto mapea a la columna real de tu base de datos
+private Integer id;
 
     @Column(nullable = false)
     private String nombre;

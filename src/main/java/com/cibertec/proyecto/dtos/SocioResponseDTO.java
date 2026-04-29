@@ -1,7 +1,7 @@
 package com.cibertec.proyecto.dtos;
 
 public record SocioResponseDTO(
-    Long id,
+    Integer id,
     String nombre,
     String apellido,
     String dni,

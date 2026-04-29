@@ -6,10 +6,10 @@ import java.time.LocalDateTime;
 
 @Data
 public class PagoResponseDTO {
-    private Long id;
+    private Integer id;
     private Double monto;
     private LocalDateTime fecha;
     private String metodoPago;
-    private Long deudaId;
+    private Integer deudaId;
     private String conceptoDeuda;
 }

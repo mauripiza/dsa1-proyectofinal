@@ -8,7 +8,7 @@ import java.util.List;
 
 @Data
 public class DeudaResponseDTO {
-    private Long id;
+    private Integer id;
     private Double monto;
     private LocalDate fecha;
     private EstadoDeuda estado;

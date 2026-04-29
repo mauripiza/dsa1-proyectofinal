@@ -22,9 +22,10 @@ import java.util.List;
 @Setter
 public class Deuda {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@Column(name = "id_deuda") // Esto le dice a Hibernate que en MySQL use 'id_deuda'
+private Integer id;
 
     @Column(nullable = false)
     private Double monto;
